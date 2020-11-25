@@ -15,10 +15,11 @@ void Pokemon::save(string filename)
 {
 	ofstream file;
 	file.open(filename, ios::app);
-	file<<name<<endl;
-	file<<hp<<endl;
-	file<<attack<<endl;
-	file<<defence<<endl;
-	file<<speed<<endl;
+	file<<"- Pokemon:"<<endl;
+	file<<"\tname: "<<name<<endl;
+	file<<"\thealth: "<<hp<<endl;
+	file<<"\tattack: "<<attack<<endl;
+	file<<"\tdefence: "<<defence<<endl;
+	file<<"\tspeed: "<<speed<<endl;
 	file.close();
 }
